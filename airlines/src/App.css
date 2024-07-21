@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+.liner{
+  color: red;
+}
+header {
+  /* background-color: #4c9ddf; */
+  background:hsl(0, 0%, 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
+}
+
+.menu img{
+  width: 50px;
+  margin-top: 10px;
+}
+.menu img:hover{
+  cursor: pointer;
+}
+.logo {
+  height: 50px; /* Adjust as needed */
+  margin-right: 15px;
+}
+
+.title {
+  color: #000;
+  font-size: 20px;
+  margin-left: -30px;
+  font-weight: 900;
+  color: #1a1919;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+header nav ul li {
+  margin: 20px 15px;
+}
+
+#inside{
+  display: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color:#000;
+  font-size: 16px;
+  transition: color 0.3s;
+  font-weight: 300;
+}
+
+header nav ul li a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+}
+
+#slider{
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  background-color:black;
+  top: 7rem;
+}
+.slideList{
+  height: 400px !important;
+  transition: all 0.5s linear;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+  header nav ul {
+   display: none;
+  }
+  .menu{
+    display: block;
+  }
+}
+@media screen and (min-width:801px) {
+  
+  .menu{
+    display:none;
+  }
+}

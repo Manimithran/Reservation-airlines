@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    margin-top: 5px;
+    padding: 0;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1.5fr 2fr;
+    background-color: #fff;
+    padding: 2rem;
+
+}
+.text{
+    margin: 0;
+    padding-left: 2rem;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 100;
+}
+button{
+    width: 60%;
+    height: 60px;
+    background-color:#fff;   
+    color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+button:hover{
+    cursor: pointer;
+    outline: 2px solid black;
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+svg{
+    width: 25px;
+    height: 30px;
+}
+
+big{
+    color: black;
+
+}
+
+.planeHome{
+    width: 50vw;
+    height: 70vh;
+}
+.buttonPlane img{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    margin-top:7px;
+    background-attachment: fixed;
+}
+.slider{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-color:white;
+    display: none;
+}
+
+@media screen and (max-width:792px) {
+    .pic{
+        display: none;
+    }
+    
+}
